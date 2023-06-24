@@ -1,11 +1,11 @@
 {
-    "name": "balucharimart_admin",
-    "short_name": "balucharimart_admin",
+    "name": "balucharimart_web",
+    "short_name": "balucharimart_web",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "Admin panel for balucharimart app",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [

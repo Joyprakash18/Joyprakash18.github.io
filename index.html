@@ -18,23 +18,23 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="Admin panel for balucharimart app">
+  <meta name="description" content="A new Flutter project.">
 
   <!-- iOS meta tags & icons -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="balucharimart_admin">
+  <meta name="apple-mobile-web-app-title" content="balucharimart_web">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>balucharimart_admin</title>
+  <title>balucharimart_web</title>
   <link rel="manifest" href="manifest.json">
 
   <script>
     // The value below is injected by flutter build, do not touch.
-    var serviceWorkerVersion = '3543437188';
+    var serviceWorkerVersion = "1951559002";
   </script>
   <!-- This script adds the flutter initialization JS code -->
   <script src="flutter.js" defer></script>
@@ -46,31 +46,14 @@
       _flutter.loader.loadEntrypoint({
         serviceWorker: {
           serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
         }
-      }).then(function(engineInitializer) {
-        return engineInitializer.initializeEngine();
-      }).then(function(appRunner) {
-        return appRunner.runApp();
       });
     });
-  </script>
-  <script src="https://www.gstatic.com/firebasejs/9.9.4/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.9.4/firebase-storage.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.9.4/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.9.4/firebase-auth.js"></script>
-  <script>
-     var firebaseConfig = {
-      apiKey: "AIzaSyBh61SKOCc7qRCPOeTDkLtO7C8gwBVPN7M",
-      authDomain: "balucharimart-b1d59.firebaseapp.com",
-      databaseURL: "https://balucharimart-b1d59-default-rtdb.asia-southeast1.firebasedatabase.app",
-      projectId: "balucharimart-b1d59",
-      storageBucket: "balucharimart-b1d59.appspot.com",
-      messagingSenderId: "802678610903",
-      appId: "1:802678610903:web:db425cd2450bbf32a60992",
-      measurementId: "G-4CL3S3C5HL"
-    };
-    // Initialize Firebase
-    firebase.initializeApp(firebaseConfig);
   </script>
 </body>
 </html>
